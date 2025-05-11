@@ -52,10 +52,10 @@ x = f(\theta) \Rightarrow \dot{x} = J(\theta) \cdot \dot{\theta}
 末端位置：
 
 $\[
-\begin{cases}
+$\begin{cases}
 x = L_1 \cos\theta_1 + L_2 \cos(\theta_1 + \theta_2) \\
 y = L_1 \sin\theta_1 + L_2 \sin(\theta_1 + \theta_2)
-\end{cases}
+\end{cases}$
 \]$
 
 Jacobian 矩阵：
