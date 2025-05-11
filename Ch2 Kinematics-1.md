@@ -82,9 +82,8 @@ $$
 \dot{x} \\
 \dot{y}
 \end{bmatrix}
-$$
+
 =
-$$
 J(\theta_1, \theta_2)
 \begin{bmatrix}
 \dot{\theta}_1 \\
