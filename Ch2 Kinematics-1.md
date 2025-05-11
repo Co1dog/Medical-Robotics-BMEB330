@@ -80,7 +80,7 @@ J(\theta_1,\theta_2)=
 =
 J(\theta_1,\theta_2)
 \begin{bmatrix}\dot{\theta}_1\\\dot{\theta}_2\end{bmatrix}
-$$
+ $$
 
 
 ---
@@ -113,7 +113,7 @@ $$
 
 推导步骤：
 
-- 虚功守恒：$F^T \delta x = \tau^T \delta \theta$  
+- 虚功守恒： $F^T \delta x = \tau^T \delta \theta$ 
 - 代入 $\delta x = J \delta \theta$ 得：
 
 $$
