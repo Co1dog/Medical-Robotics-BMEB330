@@ -58,32 +58,30 @@ y = L_1 \sin \theta_1 + L_2 \sin(\theta_1 + \theta_2)
 \end{cases}
 $$
 
-Jacobian 矩阵：
+Jacobian 矩阵  
 
 $$
-J(\theta_1, \theta_2) =
+J(\theta_1,\theta_2)=
 \begin{bmatrix}
-- L_1 \sin \theta_1 - L_2 \sin(\theta_1 + \theta_2) & -L_2 \sin(\theta_1 + \theta_2) \\
-L_1 \cos \theta_1 + L_2 \cos(\theta_1 + \theta_2) & L_2 \cos(\theta_1 + \theta_2)
+\dfrac{\partial x}{\partial \theta_1} & \dfrac{\partial x}{\partial \theta_2}\\
+\dfrac{\partial y}{\partial \theta_1} & \dfrac{\partial y}{\partial \theta_2}
 \end{bmatrix}
-$$
-
-速度关系：
-
-$$
-\begin{bmatrix}
-\dot{x} \\
-\dot{y}
-\end{bmatrix}
-$$
 =
-$$
-J(\theta_1, \theta_2)
 \begin{bmatrix}
-\dot{\theta}_1 \\
-\dot{\theta}_2
+- L_1\sin\theta_1 - L_2\sin(\theta_1+\theta_2) & -L_2\sin(\theta_1+\theta_2)\\
+\;L_1\cos\theta_1 + L_2\cos(\theta_1+\theta_2) & \;L_2\cos(\theta_1+\theta_2)
 \end{bmatrix}
 $$
+
+速度关系  
+
+$$
+\begin{bmatrix}\dot{x}\\\dot{y}\end{bmatrix}
+=
+J(\theta_1,\theta_2)
+\begin{bmatrix}\dot{\theta}_1\\\dot{\theta}_2\end{bmatrix}
+$$
+
 
 ---
 
