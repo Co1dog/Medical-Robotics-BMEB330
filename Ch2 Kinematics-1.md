@@ -67,7 +67,7 @@ J(\theta_1,\theta_2)
 \begin{bmatrix}
 \dfrac{\partial x}{\partial \theta_1} & \dfrac{\partial x}{\partial \theta_2}\\
 \dfrac{\partial y}{\partial \theta_1} & \dfrac{\partial y}{\partial \theta_2}
-\end{bmatrix}\\[6pt]     % ← 注意是 **\\[6pt]**
+\end{bmatrix}
 &=
 \begin{bmatrix}
 -\,L_1\sin\theta_1 - L_2\sin(\theta_1+\theta_2) & -\,L_2\sin(\theta_1+\theta_2)\\
