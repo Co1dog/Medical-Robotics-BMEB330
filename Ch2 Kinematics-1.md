@@ -84,7 +84,7 @@ $$
 \dot{x}\\\dot{y}
 \end{bmatrix}
 &=
-J(\theta_1,\theta_2)\,
+J(\theta_1,\theta_2)\
 \begin{bmatrix}
 \dot{\theta}_1\\\dot{\theta}_2
 \end{bmatrix}
