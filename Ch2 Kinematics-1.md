@@ -58,7 +58,7 @@ y = L_1 \sin \theta_1 + L_2 \sin(\theta_1 + \theta_2)
 \end{cases}
  $$
 
-Jacobian 矩阵
+### Jacobian 矩阵
 
 $$
 \begin{aligned}
@@ -67,16 +67,17 @@ J(\theta_1,\theta_2)
 \begin{bmatrix}
 \dfrac{\partial x}{\partial \theta_1} & \dfrac{\partial x}{\partial \theta_2}\\
 \dfrac{\partial y}{\partial \theta_1} & \dfrac{\partial y}{\partial \theta_2}
-\end{bmatrix}\\[6pt]
+\end{bmatrix}\\[6pt]     % ← 注意是 **\\[6pt]**
 &=
 \begin{bmatrix}
 -\,L_1\sin\theta_1 - L_2\sin(\theta_1+\theta_2) & -\,L_2\sin(\theta_1+\theta_2)\\
-\;\,L_1\cos\theta_1 + L_2\cos(\theta_1+\theta_2) & \;\,L_2\cos(\theta_1+\theta_2)
+\;L_1\cos\theta_1 + L_2\cos(\theta_1+\theta_2) & \;L_2\cos(\theta_1+\theta_2)
 \end{bmatrix}
 \end{aligned}
 $$
 
-速度关系
+
+### 速度关系
 
 $$
 \begin{bmatrix}\dot{x}\\\dot{y}\end{bmatrix}
