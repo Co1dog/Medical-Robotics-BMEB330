@@ -87,7 +87,7 @@ $$
 
 ## 4. 奇异位形（Singularities）
 
-当 $\det(J) = 0$，Jacobian 不可逆，表示：
+当 $\det(J)=0$，Jacobian 不可逆，表示：
 
 - 无法反解 $\dot{\theta}$，系统丧失某些方向的运动能力  
 - 存在控制死区或刚体退化  
@@ -95,10 +95,10 @@ $$
 具体到 2R 系统：
 
 $$
-\det(J) = L_1 L_2 \sin \theta_2
+\det(J)=L_1L_2\sin\theta_2
 $$
 
-当 $\theta_2 = 0$ 或 $\pi$ 时，$\det(J) = 0$，系统奇异。
+当 $\theta_2=0$ 或 $\pi$ 时，$\det(J)=0$，系统奇异。
 
 ---
 
