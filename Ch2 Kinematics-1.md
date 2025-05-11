@@ -51,16 +51,16 @@ $$
 
 末端位置：
 
-$$
+ $$
 \begin{cases}
 x = L_1 \cos \theta_1 + L_2 \cos(\theta_1 + \theta_2) \\
 y = L_1 \sin \theta_1 + L_2 \sin(\theta_1 + \theta_2)
 \end{cases}
-$$
+ $$
 
 Jacobian 矩阵  
 
-$$
+ $$
 J(\theta_1,\theta_2)=
 \begin{bmatrix}
 \dfrac{\partial x}{\partial \theta_1} & \dfrac{\partial x}{\partial \theta_2}\\
@@ -71,11 +71,11 @@ J(\theta_1,\theta_2)=
 - L_1\sin\theta_1 - L_2\sin(\theta_1+\theta_2) & -L_2\sin(\theta_1+\theta_2)\\
 \;L_1\cos\theta_1 + L_2\cos(\theta_1+\theta_2) & \;L_2\cos(\theta_1+\theta_2)
 \end{bmatrix}
-$$
+ $$
 
 速度关系  
 
-$$
+ $$
 \begin{bmatrix}\dot{x}\\\dot{y}\end{bmatrix}
 =
 J(\theta_1,\theta_2)
@@ -94,11 +94,11 @@ $$
 
 具体到 2R 系统：
 
-$$
+ $$
 \det(J)=L_1L_2\sin\theta_2
 $$
 
-当 $\theta_2=0$ 或 $\pi$ 时，$\det(J)=0$，系统奇异。
+当 $\theta_2=0$ 或 $\pi$ 时， $\det(J)=0$，系统奇异。
 
 
 ---
