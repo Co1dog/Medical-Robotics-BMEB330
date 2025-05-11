@@ -35,9 +35,9 @@ F = 3(n - 1) - 2l - h
 
 对正运动学函数两边求导：
 
-\[
+$\[
 x = f(\theta) \Rightarrow \dot{x} = J(\theta) \cdot \dot{\theta}
-\]
+$\]
 
 其中：
 
