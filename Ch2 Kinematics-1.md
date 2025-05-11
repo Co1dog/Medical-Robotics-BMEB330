@@ -65,7 +65,7 @@ $$
 J(\theta_1,\theta_2)
 &=
 \begin{bmatrix}
-\dfrac{\partial x}{\partial \theta_1} & \dfrac{\partial x}{\partial \theta_2}\\[4pt]
+\dfrac{\partial x}{\partial \theta_1} & \dfrac{\partial x}{\partial \theta_2}\\
 \dfrac{\partial y}{\partial \theta_1} & \dfrac{\partial y}{\partial \theta_2}
 \end{bmatrix}\\[6pt]
 &=
@@ -76,16 +76,15 @@ J(\theta_1,\theta_2)
 \end{aligned}
 $$
 
-### 速度关系：
+
+### 速度关系
 
 $$
 \begin{bmatrix}\dot{x}\\\dot{y}\end{bmatrix}
 =
 J(\theta_1,\theta_2)\,
 \begin{bmatrix}\dot{\theta}_1\\\dot{\theta}_2\end{bmatrix}
-\end{aligned}
 $$
-
 
 ---
 
