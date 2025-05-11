@@ -4,9 +4,9 @@
 
 自由度计算公式（Gruebler–Kutzbach equation）：
 
-\[
+$\[
 F = 3(n - 1) - 2l - h
-\]
+\]$
 
 其中：
 
@@ -16,18 +16,18 @@ F = 3(n - 1) - 2l - h
 
 ### 示例计算：
 
-1. \( F = 3(4-1) - 2 \times 4 - 0 = 9 - 8 = 1 \)
-2. \( F = 3(6-1) - 2 \times 7 = 15 - 14 = 1 \)
-3. \( F = 3(5-1) - 2 \times 5 = 12 - 10 = 2 \)
-4. \( F = 3(5-1) - 2 \times 5 = 12 - 10 = 2 \)
-5. \( F = 3(4-1) - 2 \times 4 = 9 - 8 = 1 \)
+1. $\( F = 3(4-1) - 2 \times 4 - 0 = 9 - 8 = 1 \)$
+2. $\( F = 3(6-1) - 2 \times 7 = 15 - 14 = 1 \)$
+3. $\( F = 3(5-1) - 2 \times 5 = 12 - 10 = 2 \)$
+4. $\( F = 3(5-1) - 2 \times 5 = 12 - 10 = 2 \)$
+5. $\( F = 3(4-1) - 2 \times 4 = 9 - 8 = 1 \)$
 
 ---
 
 ## 2. 正运动学与逆运动学
 
-- 正解：给定关节变量，计算末端位姿 \( x = f(\theta) \)
-- 逆解：给定末端目标位姿，反解关节变量 \( \theta = f^{-1}(x) \)
+- 正解：给定关节变量，计算末端位姿 $\( x = f(\theta) \)$
+- 逆解：给定末端目标位姿，反解关节变量 $\( \theta = f^{-1}(x) \)$
 
 ---
 
@@ -37,13 +37,13 @@ F = 3(n - 1) - 2l - h
 
 $\[
 x = f(\theta) \Rightarrow \dot{x} = J(\theta) \cdot \dot{\theta}
-$\]
+\]$
 
 其中：
 
-- \( J(\theta) \)：Jacobian 矩阵（表示关节速度对末端速度的映射）
-- \( \dot{x} \)：末端速度
-- \( \dot{\theta} \)：关节速度
+- $\( J(\theta) \)$：Jacobian 矩阵（表示关节速度对末端速度的映射）
+- $\( \dot{x} \)$：末端速度
+- $\( \dot{\theta} \)$：关节速度
 
 ---
 
@@ -51,42 +51,42 @@ $\]
 
 末端位置：
 
-\[
+$\[
 \begin{cases}
 x = L_1 \cos\theta_1 + L_2 \cos(\theta_1 + \theta_2) \\
 y = L_1 \sin\theta_1 + L_2 \sin(\theta_1 + \theta_2)
 \end{cases}
-\]
+\]$
 
 Jacobian 矩阵：
 
-\[
+$\[
 J(\theta_1, \theta_2) =
 \begin{bmatrix}
 \frac{\partial x}{\partial \theta_1} & \frac{\partial x}{\partial \theta_2} \\
 \frac{\partial y}{\partial \theta_1} & \frac{\partial y}{\partial \theta_2}
-\end{bmatrix}
+\end{bmatrix}$
 =
-\begin{bmatrix}
+$\begin{bmatrix}
 - L_1 \sin\theta_1 - L_2 \sin(\theta_1 + \theta_2) & -L_2 \sin(\theta_1 + \theta_2) \\
 L_1 \cos\theta_1 + L_2 \cos(\theta_1 + \theta_2) & L_2 \cos(\theta_1 + \theta_2)
 \end{bmatrix}
-\]
+\]$
 
 速度变换：
 
-\[
+$\[
 \begin{bmatrix}
 \dot{x} \\
 \dot{y}
-\end{bmatrix}
+\end{bmatrix}$
 =
-J(\theta_1, \theta_2)
+$J(\theta_1, \theta_2)
 \begin{bmatrix}
 \dot{\theta}_1 \\
 \dot{\theta}_2
 \end{bmatrix}
-\]
+\]$
 
 ---
 
