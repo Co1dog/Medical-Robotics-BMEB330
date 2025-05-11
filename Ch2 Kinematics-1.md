@@ -71,7 +71,7 @@ J(\theta_1,\theta_2)
 &=
 \begin{bmatrix}
 -L_1\sin\theta_1 - L_2\sin(\theta_1+\theta_2) & -L_2\sin(\theta_1+\theta_2)\\
-\L_1\cos\theta_1 + L_2\cos(\theta_1+\theta_2) & \L_2\cos(\theta_1+\theta_2)
+L_1\cos\theta_1 + L_2\cos(\theta_1+\theta_2) & L_2\cos(\theta_1+\theta_2)
 \end{bmatrix}
 \end{aligned}
 $$
