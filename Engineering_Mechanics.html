@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <title>Engineering Mechanics – Statics Notes</title>
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        displayMath: [['$$', '$$'], ['\\[', '\\]']]
+      }
+    };
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <style>
+    body {
+      max-width: 860px;
+      margin: 2rem auto;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial;
+      line-height: 1.6;
+    }
+    h1, h2, h3 { margin-top: 2rem; }
+    hr { margin: 2rem 0; }
+  </style>
+</head>
+<body>
+
+<h1>Engineering Mechanics: Statics – Summary Notes</h1>
+
+<h2>1. Fundamentals</h2>
+<ul>
+  <li>静力学研究的是处于静止或匀速直线运动状态下的物体所受力的平衡。</li>
+  <li>动力学包括运动几何学（kinematics）与动力学（kinetics）。</li>
+</ul>
+
+<h2>2. Vectors</h2>
+<ul>
+  <li>笛卡尔坐标形式：$ \vec{A} = A_x \hat{i} + A_y \hat{j} + A_z \hat{k} $</li>
+  <li>方向余弦：$ \cos\theta_x = \frac{A_x}{|\vec{A}|},\ \cos\theta_y = \frac{A_y}{|\vec{A}|},\ \cos\theta_z = \frac{A_z}{|\vec{A}|} $</li>
+  <li>单位向量：$ \hat{u}_A = \frac{\vec{A}}{|\vec{A}|} $</li>
+</ul>
+
+<h2>3. Position & Force Vectors</h2>
+<ul>
+  <li>从点 $A$ 到 $B$ 的位置向量：$ \vec{r}_{AB} = \vec{r}_B - \vec{r}_A $</li>
+  <li>沿直线方向的力：$ \vec{F} = F \hat{u} $，其中 $\hat{u} = \frac{\vec{r}}{|\vec{r}|}$</li>
+</ul>
+
+<h2>4. Dot Product</h2>
+<ul>
+  <li>点积定义：$ \vec{A} \cdot \vec{B} = AB\cos\theta = A_x B_x + A_y B_y + A_z B_z $</li>
+  <li>常用于计算向量夹角或投影。</li>
+</ul>
+
+<h2>5. Equilibrium of a Particle</h2>
+<ul>
+  <li>粒子平衡分析需绘制受力图（FBD）。</li>
+  <li>三维空间平衡条件：
+    $$ \sum F_x = 0,\quad \sum F_y = 0,\quad \sum F_z = 0 $$
+  </li>
+</ul>
+
+<h2>6. Moments</h2>
+<ul>
+  <li>力矩标量形式：$ M_O = F \cdot d $</li>
+  <li>力矩矢量形式：$ \vec{M}_O = \vec{r} \times \vec{F} $</li>
+  <li>右手法则用于判断方向。</li>
+  <li>绕任意轴的力矩：$ M_a = \vec{u}_a \cdot (\vec{r} \times \vec{F}) $</li>
+</ul>
+
+<h2>7. Couples</h2>
+<ul>
+  <li>偶力由两个大小相等、方向相反的平行力构成。</li>
+  <li>偶矩表达式：$ \vec{M} = \vec{r} \times \vec{F} $，结果为自由向量。</li>
+</ul>
+
+<h2>8. Equivalent Systems</h2>
+<ul>
+  <li>可将多个力和力矩等效为一个合力和一个合力矩。</li>
+  <li>两系统等效即其对外产生的力效应完全相同。</li>
+</ul>
+
+<h2>9. Distributed Loads</h2>
+<ul>
+  <li>面密度负载 $w(x) = p(x)b$。</li>
+  <li>合力计算：$ R = \int w(x)\,dx $</li>
+  <li>合力作用点：
+    $$ \bar{x} = \frac{1}{R} \int x w(x)\,dx $$
+  </li>
+</ul>
+
+<h2>10. Rigid Body Equilibrium</h2>
+<ul>
+  <li>二维刚体平衡方程：$ \sum F_x = 0,\ \sum F_y = 0,\ \sum M_O = 0 $</li>
+  <li>三维刚体则还需满足 $ \sum M_x,\ \sum M_y,\ \sum M_z = 0 $</li>
+</ul>
+
+<h2>11. Trusses</h2>
+<ul>
+  <li>假设所有节点均为销接，荷载仅作用于节点。</li>
+  <li>各杆件为两力杆。</li>
+  <li><strong>节点法：</strong> 对每个节点使用 $\sum F_x = 0$ 和 $\sum F_y = 0$。</li>
+  <li><strong>截面法：</strong> 剖开不超过三根杆件，列平衡方程求解。</li>
+  <li><strong>零力杆判断：</strong>
+    <ul>
+      <li>若某节点仅连两根非共线杆件，且无外力或支反力，则两者为零力杆。</li>
+      <li>若某节点有三根杆件，其中两根共线、无外力作用，则第三根为零力杆。</li>
+    </ul>
+  </li>
+</ul>
+
+<h2>12. Dry Friction</h2>
+<ul>
+  <li>静摩擦：$ f \leq \mu_s N $；滑动摩擦：$ f = \mu_k N $</li>
+  <li>判断是否滑动需验证摩擦是否超限。</li>
+  <li>摩擦问题中未知数通常大于平衡方程数量。</li>
+</ul>
+
+<h2>13. Virtual Work Principle</h2>
+<ul>
+  <li>用于求解一自由度系统的平衡位置。</li>
+  <li>假设系统发生虚位移 $ \delta r $ 或虚旋转 $ \delta \theta $。</li>
+  <li>虚功原理表达式：
+    $$ \delta W = \sum F \cdot \delta r + \sum M \cdot \delta \theta = 0 $$
+  </li>
+</ul>
+
+</body>
+</html>
